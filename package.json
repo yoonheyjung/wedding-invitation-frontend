@@ -1,0 +1,64 @@
+{
+  "name": "my-project",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "vite build",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src",
+    "deploy": "vue-cli-service s3-deploy",
+    "dev": "vite",
+    "format": "prettier .  --write",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.2.1",
+    "@fortawesome/free-brands-svg-icons": "^6.2.1",
+    "@fortawesome/free-regular-svg-icons": "^6.2.1",
+    "@fortawesome/free-solid-svg-icons": "^6.2.1",
+    "@fortawesome/vue-fontawesome": "^2.0.9",
+    "@headlessui/vue": "^1.7.7",
+    "@heroicons/vue": "^2.0.13",
+    "prune": "^0.0.2",
+    "tw-elements": "^1.0.0-alpha13",
+    "vue": "^3.2.45",
+    "vue-cli-plugin-s3-deploy": "^4.0.0-rc3",
+    "vue3-flip-countdown": "^0.1.6"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.0.0",
+    "@vue/cli-plugin-babel": "~4.4.0",
+    "@vue/cli-plugin-eslint": "~4.4.0",
+    "@vue/cli-service": "~4.4.0",
+    "autoprefixer": "^10.4.13",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8.32.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^3.4.1",
+    "eslint-plugin-standard": "^5.0.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.4",
+    "vite": "^4.0.0",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:import/errors",
+      "plugin:import/warnings",
+      "plugin:vue/recommended"
+    ],
+    "rules": {
+      "import/no-unused-vars": "off",
+      "no-unused-vars": "off",
+      "vue/no-multiple-template-root": "off",
+      "vue/valid-template-root": "off",
+      "vue/html-self-closing": "off"
+    }
+  },
+  "type": "module"
+}
