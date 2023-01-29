@@ -33,6 +33,20 @@ module.exports = {
       "50%": "50%",
       16: "4rem",
     },
+    extend: {
+      animation: {
+        "spin-slow": "spin 3s linear infinite",
+        pingSlow: "pingSlow 1s cubic-bezier(0, 0.5, 0.2, 2) infinite",
+      },
+      keyframes: {
+        pingSlow: {
+          "50%, 100%": {
+            transform: "scale(2)",
+            opacity: 0.5,
+          },
+        },
+      },
+    },
   },
   plugins: [require("tw-elements/dist/plugin")],
   fontFamily: {

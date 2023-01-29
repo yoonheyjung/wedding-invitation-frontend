@@ -247,7 +247,6 @@
 .name {
   font-family: "GangwonEdu_bold";
 }
-
 .nameEn {
   font-family: "GangwonEdu_bold";
   font-size: 15px;
