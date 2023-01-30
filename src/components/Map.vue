@@ -2,12 +2,13 @@
 <!-- git test012 -->
 <template>
   <div>
-    <div class="relative max-md:w-full lg:w-3/5 bg-center">
-      <div id="map" class="rounded-md bg-center"></div>
-    </div>
+    <h1 href="	https://map.kakao.com/link/map/8700757">카카오 맵 테스트</h1>
     <button class="rounded-full m-2 bg-indigo-500" @click="openTmap">
-      티맵 바로가기
+      티맵
     </button>
+    <div>
+      <div class="inset-px mx-5" id="map"></div>
+    </div>
   </div>
 </template>
 
@@ -48,20 +49,30 @@ export default {
           tollgateFareOption: 16,
           roadType: 32,
           directionOption: 1,
-          endX: 126.839355,
-          endY: 37.560297,
+          endX: 129.07579349764512,
+          endY: 35.17883196265564,
           endRpFlag: "G",
           reqCoordType: "WGS84GEO",
           startX: 126.98217734415019,
           startY: 37.56468648536046,
           gpsTime: "20191125153000",
+          speed: 10,
+          uncetaintyP: 1,
+          uncetaintyA: 1,
+          uncetaintyAP: 1,
           carType: 0,
-          endName: "%eb%8d%94%eb%b2%a0%eb%89%b4%ec%a7%80%ec%84%9c%ec%9a%b8",
+          startName:
+            "%EC%9D%84%EC%A7%80%EB%A1%9C%20%EC%9E%85%EA%B5%AC%EC%97%AD",
+          endName: "%ED%97%A4%EC%9D%B4%EB%A6%AC",
+          passList: "127.38454163183215,36.35127257501252",
+          gpsInfoList:
+            "126.939376564495,37.470947057194365,120430,20,50,5,2,12,1_126.939376564495,37.470947057194365,120430,20,50,5,2,12,1",
           detailPosFlag: "2",
           resCoordType: "WGS84GEO",
           sort: "index",
         }),
       };
+
       fetch(
         "https://apis.openapi.sk.com/tmap/routes?version=1&callback=function",
         options
