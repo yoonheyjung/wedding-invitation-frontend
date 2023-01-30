@@ -1,5 +1,5 @@
 <!-- eslint-disable vue/max-attributes-per-line -->
-<!-- git test 01 -->
+<!-- git test 02 -->
 <template>
   <div class="object-center">
     <div class="bg-fixed max-md:w-full lg:w-1/2 lg:left-1/2 lg:translate-x-1/2">
