@@ -1,6 +1,7 @@
+<!-- eslint-disable vue/max-attributes-per-line -->
 <template>
-  <div class="object-center max-md:w-full lg:w-1/2">
-    <div class="bg-fixed">
+  <div class="object-center">
+    <div class="bg-fixed max-md:w-full lg:w-1/2 lg:left-1/2 lg:translate-x-1/2">
       <span>
         <img src="../assets/wellcome01.jpg" alt="메인사진" />
       </span>
@@ -23,13 +24,13 @@
         </div>
       </div>
       <!-- //bottomName -->
-      <div class="petalObjWrap">
+      <!-- <div class="petalObjWrap">
         <span class="petalObj no1" />
         <span class="petalObj no2" />
         <span class="petalObj no3" />
         <span class="petalObj no4" />
         <span class="petalObj no5" />
-      </div>
+      </div> -->
     </div>
   </div>
   <!-- linkList -->
@@ -242,17 +243,6 @@
   </section>
 </template>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-.name {
-  font-family: "GangwonEdu_bold";
-}
-.nameEn {
-  font-family: "GangwonEdu_bold";
-  font-size: 15px;
-  color: #041562;
-}
-</style>
 <script>
 export default {
   methods: {
@@ -279,3 +269,15 @@ export default {
   },
 };
 </script>
+
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped>
+.name {
+  font-family: "GangwonEdu_bold";
+}
+.nameEn {
+  font-family: "GangwonEdu_bold";
+  font-size: 15px;
+  color: #041562;
+}
+</style>
