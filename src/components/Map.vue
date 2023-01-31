@@ -1,5 +1,4 @@
 <!-- eslint-disable vue/max-attributes-per-line -->
-<!-- git test03 -->
 <template>
   <div class="bg-white p-10">
     <h1 class="headTitle">📍 오시는 길을 안내합니다</h1>
