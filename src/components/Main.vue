@@ -4,34 +4,8 @@
   <div class="object-center">
     <div class="bg-fixed max-md:w-full lg:w-1/2 lg:left-1/2 lg:translate-x-1/2">
       <span>
-        <img src="../assets/wellcome01.jpg" alt="메인사진1" />
+        <img src="../assets/mainPoster.png" alt="메인사진1" />
       </span>
-      <!-- bottomName -->
-      <div
-        class="absolute text-xl top-20 left-1/2 -translate-x-1/2 -translate-y-1/2 name"
-        style="display: -webkit-inline-box"
-      >
-        <div class="p-2">
-          <h4>유범식</h4>
-          <span class="nameEn">BUM SICK</span>
-        </div>
-        <div class="p-3">
-          <em class="mon">Mar</em>
-          <em class="num">19</em>
-        </div>
-        <div class="p-2">
-          <h4>윤혜정</h4>
-          <span class="nameEn">HYE JUNG</span>
-        </div>
-      </div>
-      <!-- //bottomName -->
-      <!-- <div class="petalObjWrap">
-        <span class="petalObj no1" />
-        <span class="petalObj no2" />
-        <span class="petalObj no3" />
-        <span class="petalObj no4" />
-        <span class="petalObj no5" />
-      </div> -->
     </div>
   </div>
   <!-- linkList -->

@@ -63,6 +63,6 @@ import Footer from "./components/Footer.vue";
 }
 html,
 body {
-  background: #faedf0;
+  background: #faf1f2;
 }
 </style>
