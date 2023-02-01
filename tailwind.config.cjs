@@ -46,6 +46,10 @@ module.exports = {
           },
         },
       },
+      colors: {
+        beige: "#FBF0EA",
+        borderPink: "#FF9999",
+      },
     },
   },
   plugins: [require("tw-elements/dist/plugin")],

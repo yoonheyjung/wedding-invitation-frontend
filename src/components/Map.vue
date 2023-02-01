@@ -1,13 +1,26 @@
 <!-- eslint-disable vue/max-attributes-per-line -->
-<!-- git test012 -->
 <template>
-  <div>
-    <h1 href="	https://map.kakao.com/link/map/8700757">카카오 맵 테스트</h1>
-    <button class="rounded-full m-2 bg-indigo-500" @click="openTmap">
-      티맵
-    </button>
-    <div>
-      <div class="inset-px mx-5" id="map"></div>
+  <div class="bg-white p-10">
+    <h1 class="headTitle">📍 오시는 길을 안내합니다</h1>
+    <div class="py-7">
+      <div class="inset-px" id="map"></div>
+    </div>
+    <div class="m-10">
+      <span class="middleTitle text-lg block pb-3"> 내비게이션</span>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-y-0.5">
+        <button
+          class="butten-text rounded-lg mx-1 text-sm bg-white border-borderPink"
+          @click="openTmap()"
+        >
+          티맵 바로 안내
+        </button>
+        <button
+          class="butten-text rounded-lg mx-1 text-sm bg-white border-borderPink"
+          @click="openNaver()"
+        >
+          네이버 빠른길 찾기
+        </button>
+      </div>
     </div>
   </div>
 </template>
@@ -81,6 +94,9 @@ export default {
         .then((response) => console.log(response))
         .catch((err) => console.error(err));
     },
+    openNaver() {
+      window.open("https://map.naver.com/v5/entry/place/33499928", "_blank");
+    },
     initMap() {
       const container = document.getElementById("map");
       const options = {
@@ -108,8 +124,21 @@ export default {
 </script>
 
 <style scoped>
+.headTitle {
+  font-family: "GangwonEdu_bold";
+  font-size: 23px;
+}
+.middleTitle {
+  font-family: "GangwonEdu_bold";
+  font-size: 20px;
+}
+.butten-text {
+  font-family: "IM_Hyemin";
+  font-size: 15px;
+  font-weight: 100;
+}
 #map {
-  width: 80%;
-  height: 400px;
+  width: 100%;
+  height: 310px;
 }
 </style>
