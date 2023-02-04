@@ -5,6 +5,8 @@ import Intro from "./components/Intro.vue";
 import Calendar from "./components/Calendar.vue";
 import Dday from "./components/DdayCount.vue";
 import Map from "./components/Map.vue";
+import Message from "./components/Message.vue";
+import Account from "./components/Account.vue";
 
 import Gallery from "./components/Gallery.vue";
 import Footer from "./components/Footer.vue";
@@ -16,9 +18,9 @@ import Footer from "./components/Footer.vue";
   <Calendar />
   <Dday />
   <Map />
-  <HelloWorld msg="Vite + Vue" />
-  <h1 class="text-3xl font-bold underline">Hello dworld!</h1>
+  <Message />
   <Gallery />
+  <Account />
   <Footer />
 </template>
 

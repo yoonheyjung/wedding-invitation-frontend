@@ -16,7 +16,7 @@
     </div>
 
     <div
-      class="text-center text-gray-700 p-4"
+      class="container text-center text-gray-700 p-4"
       style="background-color: rgba(0, 0, 0, 0.2)"
     >
       © 2023 Copyright:

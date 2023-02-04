@@ -1,21 +1,30 @@
 <!-- eslint-disable vue/max-attributes-per-line -->
 <template>
-  <div class="bg-white p-10">
+  <div class="bg-white py-10 px-5">
+    <base-input v-model="map"></base-input>
     <h1 class="headTitle">📍 오시는 길을 안내합니다</h1>
     <div class="py-7">
       <div class="inset-px" id="map"></div>
     </div>
-    <div class="m-10">
+    <div class="my-10 mx-5">
       <span class="middleTitle text-lg block pb-3"> 내비게이션</span>
+      <hr class="translate-x-1/3 border-[#ffc7c49c] w-3/5 border-dashed pb-8" />
+      <div class="middleAddress text-lg pb-3">
+        <span class="block">더베뉴지 서울</span>
+        <span class="block">
+          서울시 강서구 강서로 388 (구, 등촌동 678-14 베뉴지웨딩홀)
+        </span>
+        <span class="block"> TEL)02-2657-2100 </span>
+      </div>
       <div class="grid grid-cols-1 md:grid-cols-4 gap-y-0.5">
         <button
-          class="butten-text rounded-lg mx-1 text-sm bg-white border-borderPink"
+          class="butten-text border-[#FDAFAB] rounded-lg mx-1 text-sm col-span-1 md:col-span-2 bg-white border-borderPink"
           @click="openTmap()"
         >
           티맵 바로 안내
         </button>
         <button
-          class="butten-text rounded-lg mx-1 text-sm bg-white border-borderPink"
+          class="butten-text border-[#FDAFAB] rounded-lg mx-1 text-sm col-span-1 md:col-span-2 bg-white border-borderPink"
           @click="openNaver()"
         >
           네이버 빠른길 찾기
@@ -131,6 +140,10 @@ export default {
 .middleTitle {
   font-family: "GangwonEdu_bold";
   font-size: 20px;
+}
+.middleAddress {
+  font-family: "GangwonEdu_bold";
+  font-size: 18px;
 }
 .butten-text {
   font-family: "IM_Hyemin";

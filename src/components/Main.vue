@@ -65,8 +65,9 @@
         <span class="tab tab-home block text-xs">Home</span>
       </a>
       <a
-        href="#"
+        href="https://map.naver.com/v5/entry/place/33499928"
         class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1"
+        @focus="map"
       >
         <svg
           width="25"
