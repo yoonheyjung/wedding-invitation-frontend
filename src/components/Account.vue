@@ -2,80 +2,74 @@
   <div>
     <h1 class="headTitle pt-3 pb-5">마음 전하실 곳</h1>
     <hr class="translate-x-1/3 border-[#ffc7c49c] w-3/5 border-dashed pb-3" />
+  </div>
+  <!-- 신랑 /  신부 -->
+  <div class="account grid grid-cols-2 gap-y-3">
+    <div class="">
+      <div class="text-lg block">신랑 유범식</div>
 
-    <button
-      id="dropdownHoverButton"
-      data-dropdown-toggle="dropdownHover"
-      data-dropdown-trigger="hover"
-      class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-      type="button"
-    >
-      Dropdown hover
-      <svg
-        class="w-4 h-4 ml-2"
-        aria-hidden="true"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M19 9l-7 7-7-7"
-        ></path>
-      </svg>
-    </button>
-    <!-- Dropdown menu -->
-    <div
-      id="dropdownHover"
-      class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
-    >
-      <ul
-        class="py-2 text-sm text-gray-700 dark:text-gray-200"
-        aria-labelledby="dropdownHoverButton"
-      >
-        <li>
-          <a
-            href="#"
-            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-            >Dashboard</a
-          >
-        </li>
-        <li>
-          <a
-            href="#"
-            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-            >Settings</a
-          >
-        </li>
-        <li>
-          <a
-            href="#"
-            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-            >Earnings</a
-          >
-        </li>
-        <li>
-          <a
-            href="#"
-            class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-            >Sign out</a
-          >
-        </li>
-      </ul>
+      <div class="block">
+        <a class="pr-3" href="tel:01045626484">📞</a
+        ><a href="sms:01045626484">💬</a>
+      </div>
+      <div class="block">
+        <button type="button" @click="urlLink('bum')">계좌번호</button>
+      </div>
+    </div>
+    <div class="">
+      <div class="text-lg block">신부 윤혜정</div>
+
+      <div class="block">
+        <a class="pr-3" href="tel:01063805318"> 📞 </a
+        ><a href="sms:01063805318"> 💬 </a>
+      </div>
+      <div class="block">
+        <button type="button" @click="urlLink('hey')">계좌번호</button>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {},
+  methods: {
+    kakaoPay() {
+      window.open("http://kko.to/TdB4cRvFlh", "_blank");
+    },
+
+    urlLink(who) {
+      let copyLink = { account: "", name: "" };
+
+      switch (who) {
+        case "bum":
+          copyLink.account = "국민은행 48970101571806";
+          copyLink.name = "신랑의";
+          break;
+        case "hey":
+          copyLink.account = "신한은행 110439208364";
+          copyLink.name = "신부의";
+          break;
+      }
+      this.$copyText(copyLink.account).then(function () {
+        alert(`${copyLink.name} 계좌번호가 복사되었습니다.`);
+      });
+    },
+  },
+};
 </script>
 
 <style scoped>
 .headTitle {
   font-family: "GangwonEdu_bold";
   font-size: 23px;
+}
+.account div {
+  font-family: "GangwonEdu_bold";
+  font-size: 20px;
+}
+.account button {
+  font-family: "GangwonEdu_bold";
+  font-size: 16px;
 }
 </style>
