@@ -226,13 +226,13 @@ export default {
       window.Kakao.Link.sendDefault({
         objectType: "feed",
         content: {
-          title: "이거슨 범식&해정이의 청첩장 테스트트트트.",
-          description: "청첩장의 설명이랄까 ...",
+          title: "범식❤️혜정, 결혼식에 초대합니다",
+          description: "2023년 03월 19일 오전 11시, 더베뉴지 아트홀",
           imageUrl:
             "https://sikhyeworld.s3.ap-northeast-2.amazonaws.com/static/221117+o1_bs_w_7239-.jpg",
           link: {
-            mobileWebUrl: "http://test.sikhyeworld.com",
-            webUrl: "http://test.sikhyeworld.com",
+            mobileWebUrl: "http://www.sikhyeworld.com",
+            webUrl: "http://www.sikhyeworld.com",
           },
         },
       });

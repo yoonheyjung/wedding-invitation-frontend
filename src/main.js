@@ -9,8 +9,9 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { faUserSecret } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 library.add(faUserSecret);
+
 VueClipboard.config.autoSetContainer = true;
-// Vue.use(VueClipboard)
+// Vue.prototype.$axios = axios;
 
 const app = createApp(App);
 // 위에 createApp을 통해 생성한 Vue Application 인스턴스의 component API 활용

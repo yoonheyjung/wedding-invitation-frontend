@@ -2,7 +2,7 @@
 <template>
   <div>
     <div
-      class="address whitespace-pre-line mx-8 outline outline-offset-8 outline-pink-200 font-semibold text-xl"
+      class="address whitespace-pre-line mx-8 outline outline-offset-8 outline-pink-200 font-semibold"
     >
       <span>🤍 더베뉴지서울 아트홀 🤍</span>
     </div>
@@ -85,7 +85,7 @@ export default {};
 <style>
 .address {
   font-family: "GangwonEdu_bold";
-  font-size: 18px;
+  font-size: 20px;
 }
 .calWrap {
   font-family: "IM_Hyemin";

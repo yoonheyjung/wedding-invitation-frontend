@@ -7,6 +7,7 @@ import Dday from "./components/DdayCount.vue";
 import Map from "./components/Map.vue";
 import Message from "./components/Message.vue";
 import Account from "./components/Account.vue";
+import AccountParent from "./components/AccountParent.vue";
 
 import Gallery from "./components/Gallery.vue";
 import Footer from "./components/Footer.vue";
@@ -18,9 +19,10 @@ import Footer from "./components/Footer.vue";
   <Calendar />
   <Dday />
   <Map />
-  <Message />
   <Gallery />
   <Account />
+  <AccountParent />
+  <Message />
   <Footer />
 </template>
 

@@ -3,7 +3,7 @@
     <h1 class="headTitle pt-3 pb-5">두 사람의 사랑을 담은 순간</h1>
     <hr class="translate-x-1/3 border-[#ffc7c49c] w-4/6 border-dashed pb-3" />
     <div
-      class="flex snap-mandatory scroll-pl-6 snap-x scroll-auto gap-2 overflow-x-auto md:h-1/3"
+      class="flex snap-mandatory scroll-pl-6 snap-x scroll-auto gap-2 overflow-x-auto md:h-1/5 lg:sh-72"
     >
       <img
         class="snap-always snap-center shrink-0 rounded-lg scroll-m-6"
