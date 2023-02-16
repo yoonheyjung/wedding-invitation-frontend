@@ -220,7 +220,12 @@
 </template>
 
 <script>
+// import axios from "axios";
+
 export default {
+  created() {
+    this.test();
+  },
   methods: {
     sendkakao: function () {
       window.Kakao.Link.sendDefault({
@@ -229,13 +234,27 @@ export default {
           title: "범식❤️혜정, 결혼식에 초대합니다",
           description: "2023년 03월 19일 오전 11시, 더베뉴지 아트홀",
           imageUrl:
-            "https://sikhyeworld.s3.ap-northeast-2.amazonaws.com/static/221117+o1_bs_w_7239-.jpg",
+            "https://sikhyeworld.s3.ap-northeast-2.amazonaws.com/static/16.jpg",
           link: {
             mobileWebUrl: "http://www.sikhyeworld.com",
             webUrl: "http://www.sikhyeworld.com",
           },
         },
       });
+    },
+    test: () => {
+      // axios({
+      //   method: "GET",
+      //   baseURL: "http://3.35.127.36",
+      //   url: "/healthcheck",
+      //   headers: {
+      //     "Access-Control-Allow-Origin": " http://3.35.127.36",
+      //     "Content-Type": "application/json",
+      //     "Access-Control-Allow-Origin": "*",
+      //   },
+      // }).then((res) => {
+      //   console.log("res.data :", res.data);
+      // });
     },
   },
   head() {

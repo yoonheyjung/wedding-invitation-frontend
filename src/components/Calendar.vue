@@ -8,6 +8,7 @@
     </div>
     <!-- calWrap -->
     <div class="calWrap grid place-items-center p-5">
+      <span class="my-2">3월</span>
       <table class="table-auto">
         <thead>
           <tr>
@@ -90,6 +91,10 @@ export default {};
 .calWrap {
   font-family: "IM_Hyemin";
   font-size: 18px;
+}
+.calWrap span {
+  font-family: "IM_Hyemin";
+  font-size: 22px;
 }
 .calWrap * {
   font-family: "IM_Hyemin";
