@@ -11,30 +11,35 @@
 <script>
 export default {
   methods: {
-    // getMessage() {
-    //   axios({
-    //     baseUrl: "api.sikhyeworld.com",
-    //     url: "/v1/messages",
-    //     method: "get",
-    //     data: form,
-    //   })
-    //     .then((res) => {})
-    //     .catch(function (error) {
-    //       console.log(error);
-    //     });
-    // },
-    // saveMessage() {
-    //   axios({
-    //     baseUrl: "api.sikhyeworld.com",
-    //     url: "/v1/messages",
-    //     method: "post",
-    //     data: form,
-    //   })
-    //     .then((res) => {})
-    //     .catch(function (error) {
-    //       console.log(error);
-    //     });
-    // },
+    getMessage() {
+      axios({
+        method: "get",
+        url: "http://api.sikhyeworld.com/v1/messages",
+        params: { limit: 3, offset: 3 },
+        responseType: "json",
+        headers: { "Access-Control-Allow-Origin": "*" },
+        withCredentials: true,
+      })
+        .then((res) => {
+          res.data = {};
+          console.log(`🚀 ~ .then ~ res`, res);
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+    },
+    saveMessage() {
+      axios({
+        baseUrl: "api.sikhyeworld.com",
+        url: "/v1/messages",
+        method: "post",
+        data: form,
+      })
+        .then((res) => {})
+        .catch(function (error) {
+          console.log(error);
+        });
+    },
   },
 };
 </script>

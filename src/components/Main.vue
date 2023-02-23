@@ -244,16 +244,11 @@ export default {
     },
     test: () => {
       axios({
-        method: "GET",
-        baseURL: "http://3.35.127.36",
-        url: "/healthcheck",
-        headers: {
-          "Access-Control-Allow-Origin": " http://3.35.127.36",
-          "Content-Type": "application/json",
-          "Access-Control-Allow-Origin": "*",
-        },
-      }).then((res) => {
-        console.log("res.data :", res.data);
+        method: "get",
+        url: "http://api.sikhyeworld.com/healthcheck",
+        responseType: "json",
+        headers: { "Access-Control-Allow-Origin": "*" },
+        withCredentials: true,
       });
     },
   },
