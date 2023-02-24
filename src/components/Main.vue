@@ -247,8 +247,12 @@ export default {
         method: "get",
         url: "http://api.sikhyeworld.com/healthcheck",
         responseType: "json",
-        headers: { "Access-Control-Allow-Origin": "*" },
-        withCredentials: true,
+        headers: {
+          "Access-Control-Allow-Origin": "*",
+        },
+        xhrFields: {
+          withCredentials: true,
+        },
       });
     },
   },

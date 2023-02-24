@@ -3,7 +3,7 @@
     <!-- <h1 class="headTitle pt-3 pb-5">메세지를 남겨주세요 ❤️</h1> -->
     <hr class="translate-x-1/3 border-[#ffc7c49c] w-3/5 border-dashed pb-3" />
     <h1 class="headTitle text-zinc-500 pt-3 pb-5">
-      방명록은 조금만 기다려주세요 ❤️
+      방명록은 2월 26일에 열립니다. 조금만 기다려주세요 ❤️
     </h1>
   </div>
 </template>
@@ -18,7 +18,9 @@ export default {
         params: { limit: 3, offset: 3 },
         responseType: "json",
         headers: { "Access-Control-Allow-Origin": "*" },
-        withCredentials: true,
+        xhrFields: {
+          withCredentials: true,
+        },
       })
         .then((res) => {
           res.data = {};
@@ -34,6 +36,9 @@ export default {
         url: "/v1/messages",
         method: "post",
         data: form,
+        xhrFields: {
+          withCredentials: true,
+        },
       })
         .then((res) => {})
         .catch(function (error) {
