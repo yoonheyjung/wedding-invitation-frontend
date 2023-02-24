@@ -1,5 +1,5 @@
 <template>
-  <div class="intro w-full p-10 my-14">
+  <div class="intro w-full p-10 my-5">
     <div class="intro1 p-6 text-xl">
       <span class="block pb-2">사랑이 무엇인지 </span
       ><span>누군가 물어왔을 때</span>
@@ -32,7 +32,7 @@ export default {};
 
 <style>
 .intro {
-  background: #f6f1f2;
+  background: #faf1f2;
 }
 .introName * {
   font-family: "IM_Hyemin";

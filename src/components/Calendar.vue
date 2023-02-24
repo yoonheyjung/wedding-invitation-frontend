@@ -2,12 +2,13 @@
 <template>
   <div>
     <div
-      class="address whitespace-pre-line mx-8 outline outline-offset-8 outline-pink-200 font-semibold text-xl"
+      class="address whitespace-pre-line mx-8 outline outline-offset-8 outline-pink-200 font-semibold"
     >
       <span>🤍 더베뉴지서울 아트홀 🤍</span>
     </div>
     <!-- calWrap -->
     <div class="calWrap grid place-items-center p-5">
+      <span class="my-2">3월</span>
       <table class="table-auto">
         <thead>
           <tr>
@@ -85,11 +86,15 @@ export default {};
 <style>
 .address {
   font-family: "GangwonEdu_bold";
-  font-size: 18px;
+  font-size: 20px;
 }
 .calWrap {
   font-family: "IM_Hyemin";
   font-size: 18px;
+}
+.calWrap span {
+  font-family: "IM_Hyemin";
+  font-size: 22px;
 }
 .calWrap * {
   font-family: "IM_Hyemin";

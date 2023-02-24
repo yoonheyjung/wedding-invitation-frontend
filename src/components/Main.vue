@@ -4,34 +4,8 @@
   <div class="object-center">
     <div class="bg-fixed max-md:w-full lg:w-1/2 lg:left-1/2 lg:translate-x-1/2">
       <span>
-        <img src="../assets/wellcome01.jpg" alt="메인사진1" />
+        <img src="../assets/mainPoster.png" alt="메인사진1" />
       </span>
-      <!-- bottomName -->
-      <div
-        class="absolute text-xl top-20 left-1/2 -translate-x-1/2 -translate-y-1/2 name"
-        style="display: -webkit-inline-box"
-      >
-        <div class="p-2">
-          <h4>유범식</h4>
-          <span class="nameEn">BUM SICK</span>
-        </div>
-        <div class="p-3">
-          <em class="mon">Mar</em>
-          <em class="num">19</em>
-        </div>
-        <div class="p-2">
-          <h4>윤혜정</h4>
-          <span class="nameEn">HYE JUNG</span>
-        </div>
-      </div>
-      <!-- //bottomName -->
-      <!-- <div class="petalObjWrap">
-        <span class="petalObj no1" />
-        <span class="petalObj no2" />
-        <span class="petalObj no3" />
-        <span class="petalObj no4" />
-        <span class="petalObj no5" />
-      </div> -->
     </div>
   </div>
   <!-- linkList -->
@@ -91,8 +65,9 @@
         <span class="tab tab-home block text-xs">Home</span>
       </a>
       <a
-        href="#"
+        href="https://map.naver.com/v5/entry/place/33499928"
         class="w-full focus:text-teal-500 hover:text-teal-500 justify-center inline-block text-center pt-2 pb-1"
+        @focus="map"
       >
         <svg
           width="25"
@@ -245,21 +220,35 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
+  created() {
+    this.test();
+  },
   methods: {
     sendkakao: function () {
       window.Kakao.Link.sendDefault({
         objectType: "feed",
         content: {
-          title: "이거슨 범식&해정이의 청첩장 테스트트트트.",
-          description: "청첩장의 설명이랄까 ...",
+          title: "범식❤️혜정, 결혼식에 초대합니다",
+          description: "2023년 03월 19일 오전 11시, 더베뉴지 아트홀",
           imageUrl:
-            "https://sikhyeworld.s3.ap-northeast-2.amazonaws.com/static/221117+o1_bs_w_7239-.jpg",
+            "https://sikhyeworld.s3.ap-northeast-2.amazonaws.com/static/16.jpg",
           link: {
-            mobileWebUrl: "http://test.sikhyeworld.com",
-            webUrl: "http://test.sikhyeworld.com",
+            mobileWebUrl: "http://www.sikhyeworld.com",
+            webUrl: "http://www.sikhyeworld.com",
           },
         },
+      });
+    },
+    test: () => {
+      axios({
+        method: "get",
+        url: "http://api.sikhyeworld.com/healthcheck",
+        responseType: "json",
+        headers: { "Access-Control-Allow-Origin": "*" },
+        withCredentials: true,
       });
     },
   },

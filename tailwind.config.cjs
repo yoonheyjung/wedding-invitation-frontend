@@ -46,6 +46,10 @@ module.exports = {
           },
         },
       },
+      colors: {
+        beige: "#FBF0EA",
+        borderPink: "#FF9999",
+      },
     },
   },
   plugins: [require("tw-elements/dist/plugin")],
@@ -54,7 +58,6 @@ module.exports = {
     serif: ["Merriweather", "serif"],
   },
   backgroundImage: {
-    wellcome: "url('./assets/wellcome01.jpg')",
     logo: "url('./assets/logo1.PNG')",
   },
 };

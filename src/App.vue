@@ -5,6 +5,9 @@ import Intro from "./components/Intro.vue";
 import Calendar from "./components/Calendar.vue";
 import Dday from "./components/DdayCount.vue";
 import Map from "./components/Map.vue";
+import Message from "./components/Message.vue";
+import Account from "./components/Account.vue";
+import AccountParent from "./components/AccountParent.vue";
 
 import Gallery from "./components/Gallery.vue";
 import Footer from "./components/Footer.vue";
@@ -16,9 +19,10 @@ import Footer from "./components/Footer.vue";
   <Calendar />
   <Dday />
   <Map />
-  <HelloWorld msg="Vite + Vue" />
-  <h1 class="text-3xl font-bold underline">Hello dworld!</h1>
   <Gallery />
+  <Account />
+  <AccountParent />
+  <Message />
   <Footer />
 </template>
 
@@ -41,13 +45,6 @@ import Footer from "./components/Footer.vue";
   font-style: normal;
 }
 @font-face {
-  font-family: "S-CoreDream_bold";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-5Light.woff")
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
   font-family: "IM_Hyemin";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2")
     format("woff");
@@ -63,6 +60,9 @@ import Footer from "./components/Footer.vue";
 }
 html,
 body {
-  background: #faedf0;
+  background: #faf1f2;
+}
+.title {
+  font-family: "GangwonEdu_bold";
 }
 </style>
