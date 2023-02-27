@@ -73,7 +73,7 @@ export default {
   methods: {
     getMessage: () => {
       axios({
-        url: "http://127.0.0.1:3000/v1/messages",
+        url: "https://api.sikhyeworld.com/v1/messages",
         params: { limit: 3, offset: 3 },
         responseType: "json",
         headers: { "Access-Control-Allow-Origin": "*" },
@@ -101,7 +101,7 @@ export default {
       if (!this.message) return alert("메세지를 입력해주세요 :)");
 
       axios({
-        url: "http://127.0.0.1:3000/v1/messages",
+        url: "https://api.sikhyeworld.com/v1/messages",
         method: "post",
         data: {
           user: this.user,
