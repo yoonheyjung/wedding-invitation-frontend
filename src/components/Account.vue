@@ -12,8 +12,10 @@
         <a class="pr-3" href="tel:01045626484">📞</a
         ><a href="sms:01045626484">💬</a>
       </div>
-      <div class="block">
-        <button type="button" @click="urlLink('bum')">계좌번호</button>
+      <div class="block text-zinc-600">
+        <button type="button" @click="urlLink('bum')">
+          국민 48970101571806
+        </button>
       </div>
     </div>
     <div class="">
@@ -23,8 +25,8 @@
         <a class="pr-3" href="tel:01063805318"> 📞 </a
         ><a href="sms:01063805318"> 💬 </a>
       </div>
-      <div class="block">
-        <button type="button" @click="urlLink('hey')">계좌번호</button>
+      <div class="block text-zinc-600">
+        <button type="button" @click="urlLink('hey')">신한 110439208364</button>
       </div>
     </div>
   </div>
@@ -70,6 +72,6 @@ export default {
 }
 .account button {
   font-family: "GangwonEdu_bold";
-  font-size: 16px;
+  font-size: 15px;
 }
 </style>

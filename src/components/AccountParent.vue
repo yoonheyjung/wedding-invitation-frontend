@@ -1,6 +1,6 @@
 <template>
   <div class="accountParent">
-    <h1 class="headTitle pt-3 pb-5">혼주에게 연락하기</h1>
+    <h1 class="headTitle pt-6 pb-5">혼주에게 연락하기</h1>
     <hr class="translate-x-1/3 border-[#ffc7c49c] w-3/5 border-dashed pb-3" />
   </div>
   <!-- 혼주 -->
@@ -106,7 +106,7 @@ export default {
 
 <style scoped>
 .accountParent {
-  background: #faf8f1;
+  background: #fbebf7;
 }
 .headTitle {
   font-family: "GangwonEdu_bold";
