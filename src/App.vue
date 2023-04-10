@@ -17,7 +17,7 @@ import Footer from "./components/Footer.vue";
   <Main />
   <Intro />
   <Calendar />
-  <Dday />
+  <!-- <Dday /> -->
   <Map />
   <Gallery />
   <Account />

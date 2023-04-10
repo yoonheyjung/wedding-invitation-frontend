@@ -4,7 +4,7 @@
     <hr class="translate-x-1/3 border-[#ffc7c49c] w-3/5 border-dashed pb-3" />
   </div>
   <!-- 신랑 /  신부 -->
-  <div class="account grid grid-cols-2 gap-y-3">
+  <div class="account grid grid-cols-2 gap-y-3 my-3">
     <div class="">
       <div class="text-lg block">신랑 유범식</div>
 
@@ -12,11 +12,11 @@
         <a class="pr-3" href="tel:01045626484">📞</a
         ><a href="sms:01045626484">💬</a>
       </div>
-      <div class="block text-zinc-600">
+      <!-- <div class="block text-zinc-600">
         <button type="button" @click="urlLink('bum')">
           국민 48970101571806
         </button>
-      </div>
+      </div> -->
     </div>
     <div class="">
       <div class="text-lg block">신부 윤혜정</div>
@@ -25,9 +25,9 @@
         <a class="pr-3" href="tel:01063805318"> 📞 </a
         ><a href="sms:01063805318"> 💬 </a>
       </div>
-      <div class="block text-zinc-600">
+      <!-- <div class="block text-zinc-600">
         <button type="button" @click="urlLink('hey')">신한 110439208364</button>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>

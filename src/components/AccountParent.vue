@@ -13,7 +13,7 @@
         <a class="pr-3" href="tel:01038556484">📞</a
         ><a href="sms:01038556484">💬</a>
       </div>
-      <div class="block">
+      <!-- <div class="block">
         <button
           class="text-base inline-block text-zinc-500"
           type="button"
@@ -21,7 +21,7 @@
         >
           농협 301-0186-7271-31
         </button>
-      </div>
+      </div> -->
 
       <div class="text-sm inline-block">어머니</div>
       <div class="text-lg pl-1 inline-block">임미향</div>
@@ -39,7 +39,7 @@
         <a class="pr-3" href="tel:01032133318">📞</a
         ><a href="sms:01032133318">💬</a>
       </div>
-      <div class="block m-0 lg:pl-25">
+      <!-- <div class="block m-0 lg:pl-25">
         <button
           class="text-base block text-zinc-500"
           style="margin: 0 auto"
@@ -48,7 +48,7 @@
         >
           신한 110-427-93-1177
         </button>
-      </div>
+      </div> -->
 
       <div class="text-sm inline-block">어머니</div>
       <div class="text-lg pl-1 inline-block">홍윤혜</div>
@@ -56,7 +56,7 @@
         <a class="pr-3" href="tel:01062066810"> 📞 </a
         ><a href="sms:01062066810"> 💬 </a>
       </div>
-      <div class="block m-0 lg:pl-25">
+      <!-- <div class="block m-0 lg:pl-25">
         <button
           class="text-base m-0 block text-zinc-500"
           style="margin: 0 auto"
@@ -65,7 +65,7 @@
         >
           국민 758402-04-002361
         </button>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -81,21 +81,21 @@ export default {
     urlLink(who) {
       let copyLink = { account: "", name: "" };
 
-      switch (who) {
-        case "bum":
-          copyLink.account = "농협 3010186727131";
-          copyLink.name = "신랑 아버지의";
-          break;
-        case "heyMom":
-          copyLink.account = "국민 75840204002361";
-          copyLink.name = "신부 어머니의";
-          break;
+      // switch (who) {
+      //   case "bum":
+      //     copyLink.account = "농협 3010186727131";
+      //     copyLink.name = "신랑 아버지의";
+      //     break;
+      //   case "heyMom":
+      //     copyLink.account = "국민 75840204002361";
+      //     copyLink.name = "신부 어머니의";
+      //     break;
 
-        case "heyFather":
-          copyLink.account = "신한 110427931177";
-          copyLink.name = "신부 아버지의";
-          break;
-      }
+      //   case "heyFather":
+      //     copyLink.account = "신한 110427931177";
+      //     copyLink.name = "신부 아버지의";
+      //     break;
+      // }
       this.$copyText(copyLink.account).then(function () {
         alert(`${copyLink.name} 계좌번호가 복사되었습니다.`);
       });
