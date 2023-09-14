@@ -1,27 +1,29 @@
 <script setup>
-import HelloWorld from "./components/HelloWorld.vue";
-import Main from "./components/Main.vue";
-import Intro from "./components/Intro.vue";
-import Calendar from "./components/Calendar.vue";
-import Dday from "./components/DdayCount.vue";
-import Map from "./components/Map.vue";
-import Message from "./components/Message.vue";
-import Account from "./components/Account.vue";
-import AccountParent from "./components/AccountParent.vue";
+// import HelloWorld from "./components/HelloWorld.vue";
+import Main from "../components/Main.vue";
+import Intro from "../components/Intro.vue";
+import Calendar from "../components/Calendar.vue";
+import Dday from "../components/DdayCount.vue";
+import Map from "../components/Map.vue";
+import Message from "../components/Message.vue";
+import Account from "../components/Account.vue";
+import AccountParent from "../components/AccountParent.vue";
 
-import Gallery from "./components/Gallery.vue";
-import Footer from "./components/Footer.vue";
+import Gallery from "../components/Gallery.vue";
+import Footer from "../components/Footer.vue";
 </script>
 
 <template>
-  <div id="app">
-    <!-- 네비게이션 바 또는 헤더 등의 공통 요소 -->
-
-    <!-- 현재 라우트에 따라 다르게 렌더링될 내용 -->
-    <router-view></router-view>
-
-    <!-- 푸터 또는 다른 공통 요소 -->
-  </div>
+  <Main />
+  <Intro />
+  <Calendar />
+  <!-- <Dday /> -->
+  <Map />
+  <Gallery />
+  <Account />
+  <AccountParent />
+  <Message />
+  <Footer />
 </template>
 
 <style>

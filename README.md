@@ -9,3 +9,8 @@ This template should help get you started developing with Vue 3 in Vite. The tem
 ---
 
 tailwind css
+
+### 사용 설명서
+
+- `npm run dev` : 로컬에 서버 실행
+- `npm run build` : build 생성된 파일들은 /dist에 있음.

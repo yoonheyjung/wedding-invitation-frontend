@@ -4,6 +4,7 @@ import App from "./App.vue";
 import Countdown from "vue3-flip-countdown";
 import VueClipboard from "vue-clipboard2";
 import axios from "axios";
+import router from "./router";
 
 // font-awesome과 관련된 import를 정의
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -23,4 +24,5 @@ app.config.globalProperties.$axios = axios;
 
 app.use(Countdown);
 app.use(VueClipboard);
+app.use(router);
 app.mount("#app");
